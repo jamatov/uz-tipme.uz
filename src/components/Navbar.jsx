@@ -19,7 +19,9 @@ export default function Navbar() {
     <nav className='Navbar'>
       <div className="container">
         <div className="nav-body">
-          <img className='nav-logo' src={img} alt="logo" />
+          <NavLink to='/'>
+            <img className='nav-logo' src={img} alt="logo" />
+          </NavLink>
 
           <div>
             <ul className='nav-socials'>

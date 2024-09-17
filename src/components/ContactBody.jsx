@@ -42,16 +42,11 @@ export default function ContactBody() {
 
               <div className="col-md-6">
                 <div className="card">
-                  <h3>FAKS:</h3>
-                  <a href="tel:+998712966975">
-                    <div className="social-info mb-3">
-                      <img src={printer} className='icons' alt="phone" /><p>(+998 71)296-69-75</p>
-                    </div>
-                  </a>
+                  
 
                   <h3>Vebsayt:</h3>
                   <div className="social-info mb-3">
-                    <img src={website } className='icons' alt="phone" /><p>https://tipme.uz</p>
+                    <img src={website } className='icons' alt="phone" /><p>https://uzd-tipme.uz</p>
                   </div>
 
                   <h3>Tushlik:</h3>

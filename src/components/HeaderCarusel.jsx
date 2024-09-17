@@ -5,6 +5,12 @@ import img2 from '../images/carusel3.jpg'
 function HeaderCarusel() {
   return (
     <header className='header-home'>
+      <div className="container">
+        <div className="header-info">
+
+          <h1>Tibbiyot xodimlarining kasbiy malakasini  rivojlantirish <br /> markazi</h1>
+        </div>
+      </div>
       <Carousel className='carusel' slide={false}>
         <Carousel.Item className='carusel-item'>
           <img className='carusel-img' src={img2} alt="header-img" />
