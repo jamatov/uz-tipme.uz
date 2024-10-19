@@ -1,14 +1,23 @@
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../images/carusel4.jpg'
 import img2 from '../images/carusel3.jpg'
+import { useTranslation } from "react-i18next";
 
-function HeaderCarusel() {
+
+function HeaderCarusel(changeLang) {
+
+  const { t } = useTranslation();
+  const changeLanguage = (e)=>{
+    changeLang(e.target.value)
+    localStorage.setItem("LANGUAGE", e.target.value)
+  }
+
   return (
     <header className='header-home'>
       <div className="container">
         <div className="header-info">
 
-          <h1>Tibbiyot xodimlarining kasbiy malakasini  rivojlantirish <br /> markazi</h1>
+          <h1>{t('carsuelTittle')}</h1>
         </div>
       </div>
       <Carousel className='carusel' slide={false}>
