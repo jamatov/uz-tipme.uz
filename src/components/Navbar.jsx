@@ -78,7 +78,7 @@ const Navbar = ({changeLang}) => {
             <li className='left-link'>
               <NavLink to="/markaz">{t("kafedra")}</NavLink>
               <div className="dropdown">
-                <NavLink className="drop-link" to="/markaz">{t('kafedra1')}</NavLink>
+                <NavLink className="drop-link" to="/kafedra/tarix">{t('kafedra1')}</NavLink>
                 <NavLink className="drop-link" to="/markaz">{t('kafedra2')}</NavLink>
                 <NavLink className="drop-link" to="/markaz">{t('kafedra3')}</NavLink>
                 <NavLink className="drop-link" to="/markaz">{t('kafedra4')}</NavLink>
@@ -91,12 +91,12 @@ const Navbar = ({changeLang}) => {
               <NavLink to="/xujjatlar">{t("xujjatlar")}</NavLink>
               <div className="dropdown">
                 <NavLink className="drop-link" to="/meyoriyxujjatlar/prezidentfarmonlari">{t("xujjatlar1")}</NavLink>
-                <NavLink className="drop-link" to="/xujjatlar">{t("xujjatlar2")}</NavLink>
-                <NavLink className="drop-link" to="/xujjatlar">{t("xujjatlar3")}</NavLink>
+                <NavLink className="drop-link" to="/meyoriyxujjatlar/ssvbuyruqlari">{t("xujjatlar2")}</NavLink>
+                <NavLink className="drop-link" to="/meyoriyxujjatlar/markazbuyruqlari">{t("xujjatlar3")}</NavLink>
                 <NavLink className="drop-link" to="/meyoriyxujjatlar/dasturlar">{t("xujjatlar4")}</NavLink>
                 <NavLink className="drop-link" to="/xujjatlar">{t("xujjatlar5")}</NavLink>
                 <NavLink className="drop-link" to="/xujjatlar">{t("xujjatlar6")}</NavLink>
-                <NavLink className="drop-link" to="/xujjatlar">{t("xujjatlar7")}</NavLink>
+                <NavLink className="drop-link" to="/meyoriyxujjatlar/darsjadvali">{t("xujjatlar7")}</NavLink>
               </div>
             </li>
             <li className='left-link'>

@@ -11,7 +11,11 @@ import News from './pages/News.jsx'
 import Contact from './pages/Contact';
 import Footer from './components/Footer.jsx';
 import Dasturlar from './pages/meyoriyxujjatlar/dasturlar.js';
-import Prezidentfarmonlari from './pages/kafedra/prezidentfarmonlari.js';
+import Prezidentfarmonlari from './pages/meyoriyxujjatlar/prezidentfarmonlari.js';
+import Ssvbuyruqlari from './pages/meyoriyxujjatlar/ssvbuyruqlari.js';
+import Markazbuyruqlari from './pages/meyoriyxujjatlar/markazbuyruqlari.js';
+import Darsjadvali from './pages/meyoriyxujjatlar/darsjadvali.js';
+import Tarix from './pages/kafedra/tarix.js';
 
 import { useLocation } from "react-router-dom";
 
@@ -58,7 +62,11 @@ function App() {
         <Route path='/aloqa' element={<Contact/>}/>
         <Route path='/meyoriyxujjatlar/dasturlar' element={<Dasturlar/>}/>
         <Route path='/meyoriyxujjatlar/prezidentfarmonlari' element={<Prezidentfarmonlari/>}/>
-
+        <Route path='/meyoriyxujjatlar/ssvbuyruqlari' element={<Ssvbuyruqlari/>}/>
+        <Route path='/meyoriyxujjatlar/markazbuyruqlari' element={<Markazbuyruqlari/>}/>
+        <Route path='/meyoriyxujjatlar/darsjadvali' element={<Darsjadvali/>}/>
+        <Route path='/kafedra/tarix' element={<Tarix/>}/>
+        
       </Routes>
       <Footer/>
     </div>
