@@ -50,7 +50,7 @@ const translationOz ={
 
   sitetittle: "Фойдали хаволалар",
 
-  footertittle: "Ижтимоий тармоқлар:",
+  footerTittle: "Ижтимоий тармоқлар:",
   footer1: "Манзил:",
   footer2: "Авиасозлар коъчаси 29, Яшнабод тумни, Тошкент",
   footer3: "Иш вақти:",
@@ -60,7 +60,7 @@ const translationOz ={
   footer7: "Шанба, Якшанба",
 
 
-  "tarixtittle": "Тарих",
+  tarixtittle : "Тарих",
   tarix1: "Абдуфаттев Улуғбек Авазжанович",
   tarix2: "Юклаб олиш",
   tarix3: "Алимов Рустам Рахимович",
@@ -141,14 +141,14 @@ const translationOz ={
   
 
 
-contactTittle: "Биз билан боғланиш",
-contact1: "Манзил:",
-contact2: "Тошкент ш. М.Улуғбек тумани, Паркент кўчаси, 51",
-contact3: "Алоқа рақами:",
-contact4: "Электрон почта:",
-contact5: "Иш тартиби:",
-contact6: "Вебсайт:",
-contact7: "Тушлик:",
+  contactTittle: "Биз билан боғланиш",
+  contact1: "Манзил:",
+  contact2: "Тошкент ш. М.Улуғбек тумани, Паркент кўчаси, 51",
+  contact3: "Алоқа рақами:",
+  contact4: "Электрон почта:",
+  contact5: "Иш тартиби:",
+  contact6: "Вебсайт:",
+  contact7: "Тушлик:",
 
 };
 

@@ -51,7 +51,7 @@ const translationEn ={
   
   sitetittle: "Useful links",
 
-  footertittle: "Social networks:",
+  footerTittle: "Social networks:",
   footer1: "Address:",
   footer2: "29 Aviasozlar street, Yashnabad district, Tashkent",
   footer3: "Working time:",

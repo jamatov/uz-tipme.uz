@@ -126,14 +126,14 @@ const Navbar = ({changeLang}) => {
             </li>
             <li><NavLink to="/aloqa">{t("contact")}</NavLink></li>
             
-            {values.map((v, idx) => (
+            {/* {values.map((v, idx) => (
               <svg className='burger-btn' onClick={() => handleShow(v)} xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                 <rect x="100" y="100" width="100" height="100" rx="20" transform="rotate(-180 100 100)" fill="#D9D9D9" fill-opacity="0.7"/>
                 <path d="M73 66L27 66" stroke="black" stroke-width="5" stroke-linecap="round"/>
                 <path d="M73 50L27 50" stroke="black" stroke-width="5" stroke-linecap="round"/>
                 <path d="M73 34L27 34" stroke="black" stroke-width="5" stroke-linecap="round"/>
               </svg>
-            ))}
+            ))} */}
             
             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
               <Modal.Header closeButton>
@@ -141,7 +141,11 @@ const Navbar = ({changeLang}) => {
                   <img src={img} alt="logo" />
                 </Modal.Title>
               </Modal.Header>
-              <Modal.Body>Modal body content</Modal.Body>
+              <Modal.Body>
+                  
+                  <li><NavLink values onClick={() => handleShow()} to="/">{t('home')}</NavLink></li>
+
+              </Modal.Body>
             </Modal>
 
           </ul>

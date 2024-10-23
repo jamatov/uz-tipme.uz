@@ -51,7 +51,7 @@ const translationRu ={
 
   sitetittle: "Полезные ссылки",
 
-  footertittle: "Социальные сети:",
+  footerTittle: "Социальные сети:",
   footer1: "Адрес:",
   footer2: "г. Ташкент, Яшнабадский район, ул. Авиасозлар, 29",
   footer3: "Время работы:",
