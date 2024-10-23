@@ -2,12 +2,20 @@ import React from 'react'
 import img1 from '../../images/link-soliq.jpg'
 import img2 from '../../images/link-prizident.jpg'
 import img3 from '../../images/link-xizmat.jpg'
+import { useTranslation } from "react-i18next";
 
-export default function SiteLinks() {
+
+export default function SiteLinks(changeLang) {
+
+  const { t } = useTranslation();
+  const changeLanguage = (e)=>{
+    changeLang(e.target.value)
+    localStorage.setItem("LANGUAGE", e.target.value)
+  }
   return (
     <section className='SiteLinks'>
       <div className="container">
-        <h2 className='tittle'>Foydali havolalar</h2>
+        <h2 className='tittle'> {t("sitetittle")}</h2>
         <div className="row">
 
           <div className="col-md-4">

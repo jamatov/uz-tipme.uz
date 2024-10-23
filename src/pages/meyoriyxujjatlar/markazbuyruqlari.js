@@ -1,11 +1,21 @@
 import React from 'react'
 import pdf from '../../images/icons/pdf-icon.svg'
+import { useTranslation } from "react-i18next";
 
-export default function markazbuyruqlari() {
+
+export default function Markazbuyruqlari(changeLang) {
+ 
+  const { t } = useTranslation();
+
+  const changeLanguage = (e) => {
+    changeLang(e.target.value);
+    localStorage.setItem("LANGUAGE", e.target.value);
+  };
+
   return (
     <div className='dasturlar'>
       <div className="container">
-        <h2 className="tittle">Markaz buyruqlari</h2>
+        <h2 className="tittle">{t("markazTittle")}</h2>
 
         <div className="row">
 
@@ -18,11 +28,11 @@ export default function markazbuyruqlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/markaz-buyruqlari.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/markaz-buyruqlari.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>

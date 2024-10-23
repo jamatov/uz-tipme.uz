@@ -1,11 +1,21 @@
 import React from 'react'
 import pdf from '../../images/icons/pdf-icon.svg'
+import { useTranslation } from "react-i18next";
 
-export default function ssvbuyruqlari() {
+
+export default function Ssvbuyruqlari(changeLang) {
+
+  const { t } = useTranslation();
+
+  const changeLanguage = (e) => {
+    changeLang(e.target.value);
+    localStorage.setItem("LANGUAGE", e.target.value);
+  };
+
   return (
     <div className='dasturlar'>
       <div className="container">
-        <h2 className='tittle'>Sog'liqni saqlash vazirligi buyruqlari</h2>
+        <h2 className='tittle'>{t("ssvTittle")}</h2>
 
         <div className="row">
 
@@ -18,11 +28,11 @@ export default function ssvbuyruqlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ssv1.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/ssv1.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>
@@ -38,11 +48,11 @@ export default function ssvbuyruqlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ssv2.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/ssv2.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>

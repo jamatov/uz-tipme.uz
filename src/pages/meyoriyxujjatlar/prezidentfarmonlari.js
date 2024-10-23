@@ -1,11 +1,20 @@
 import React from 'react'
 import pdf from '../../images/icons/pdf-icon.svg'
+import { useTranslation } from "react-i18next";
 
-export default function prezidentfarmonlari() {
+
+export default function Prezidentfarmonlari(changeLang) {
+
+  const { t } = useTranslation();
+
+  const changeLanguage = (e) => {
+    changeLang(e.target.value);
+    localStorage.setItem("LANGUAGE", e.target.value);
+  };
   return (
     <div className='dasturlar'>
       <div className="container">
-        <h2 className='tittle'>Prezident farmonlari</h2>
+        <h2 className='tittle'>{t("prezidentTittle")}</h2>
 
         <div className="row">
           
@@ -14,15 +23,15 @@ export default function prezidentfarmonlari() {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4></h4> 
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari1.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/prezident-farmonlari1.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>
@@ -38,11 +47,11 @@ export default function prezidentfarmonlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari2.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/prezident-farmonlari2.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>
@@ -58,11 +67,11 @@ export default function prezidentfarmonlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari3.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/prezident-farmonlari3.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>
@@ -78,11 +87,11 @@ export default function prezidentfarmonlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari4.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/prezident-farmonlari4.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>
@@ -98,11 +107,11 @@ export default function prezidentfarmonlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari5.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/prezident-farmonlari5.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>
@@ -118,11 +127,11 @@ export default function prezidentfarmonlari() {
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari6.pdf">
-                    <button className='view'>Ochish</button>
+                    <button className='view'>{t("darsopen")}</button>
                   </a>
 
                   <a href="/prezident-farmonlari6.pdf" download="">
-                    <button className='download'>Saqlash</button>
+                    <button className='download'>{t("darssave")}</button>
                   </a>
                 </div>
               </div>

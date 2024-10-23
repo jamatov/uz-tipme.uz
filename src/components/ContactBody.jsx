@@ -5,35 +5,45 @@ import email from '../images/icons/mail.svg'
 import watch from '../images/icons/watch.svg'
 import printer from '../images/icons/printer.svg'
 import website from '../images/icons/website.svg'
+import { useTranslation } from "react-i18next";
 
-export default function ContactBody() {
+
+export default function ContactBody(changeLang) {
+
+  const { t } = useTranslation();
+
+  const changeLanguage = (e) => {
+    changeLang(e.target.value);
+    localStorage.setItem("LANGUAGE", e.target.value);
+  };
+
   return (
     <section className='ContactBody'>
       <div className="container">
-        <h2 className='tittle'>Biz bilan bog'lanish</h2>
+        <h2 className='tittle'>{t("contactTittle")}</h2>
         <div className="row">
           <div className="col-md-6">
-            <h3>Manzil:</h3>
+            <h3>{t("contact1")}</h3>
             <div className='social-info mb-3'>
-              <img className='icons' src={icon} alt="location" /><p>Toshkent shahar. M.Ulug’bek tumani. Parkent ko’chasi 51</p>
+              <img className='icons' src={icon} alt="location" /><p>{t("contact2")}</p>
             </div>
 
             <div className="row">
               <div className="col-md-6">
                 <div className="card">
-                  <h3>Aloqa raqami:</h3>
+                  <h3>{t("contact3")}</h3>
                   <a href="tel:+998712966975">
                     <div className="social-info mb-3">
                       <img src={phone} className='icons' alt="phone" /><p>(+998 71)296-69-75</p>
                     </div>
                   </a>
 
-                  <h3>Email:</h3>
+                  <h3>{t("contact4")}</h3>
                   <div className="social-info mb-3">
                       <img src={email} className='icons' alt="phone" /><p>info@tipme.uz</p>
                   </div>
 
-                  <h3>Ish tartibi:</h3>
+                  <h3>{t("contact5")}</h3>
                   <div className="social-info mb-3">
                       <img src={watch} className='icons' alt="phone" /><p>08:30 - 17:00</p>
                   </div>
@@ -44,12 +54,12 @@ export default function ContactBody() {
                 <div className="card">
                   
 
-                  <h3>Vebsayt:</h3>
+                  <h3>{t("contact6")}</h3>
                   <div className="social-info mb-3">
                     <img src={website } className='icons' alt="phone" /><p>https://uzd-tipme.uz</p>
                   </div>
 
-                  <h3>Tushlik:</h3>
+                  <h3>{t("contact7")}</h3>
                   <div className="social-info mb-3">
                     <img src={watch } className='icons' alt="phone" /><p>12:00 - 13:00</p>
                   </div>
