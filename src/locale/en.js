@@ -4,6 +4,10 @@ const translationEn ={
 
   home:"Home",
 
+  logo1: "Center for the development of professional ",
+  logo2: "qualification of medical workers",
+  logo3: "1 - department of ultrasound diagnostics",
+
   kafedra: "Department",
   kafedra1: "History",
   kafedra2: "Professor-teachers",

@@ -16,6 +16,9 @@ import Ssvbuyruqlari from './pages/meyoriyxujjatlar/ssvbuyruqlari.js';
 import Markazbuyruqlari from './pages/meyoriyxujjatlar/markazbuyruqlari.js';
 import Darsjadvali from './pages/meyoriyxujjatlar/darsjadvali.js';
 import Tarix from './pages/kafedra/tarix.js';
+import Malumotnomalar from './pages/kafedra/malumotnomalar.js';
+import Taqvimreja from './pages/meyoriyxujjatlar/taqvimreja.js';
+import Ishchidasturlar from './pages/meyoriyxujjatlar/ishchidasturlar.js';
 
 import { useLocation } from "react-router-dom";
 
@@ -65,7 +68,11 @@ function App() {
         <Route path='/meyoriyxujjatlar/ssvbuyruqlari' element={<Ssvbuyruqlari/>}/>
         <Route path='/meyoriyxujjatlar/markazbuyruqlari' element={<Markazbuyruqlari/>}/>
         <Route path='/meyoriyxujjatlar/darsjadvali' element={<Darsjadvali/>}/>
+        <Route path='/meyoriyxujjatlar/taqvimreja' element={<Taqvimreja/>}/>
+        <Route path='/meyoriyxujjatlar/ishchidasturlar' element={<Ishchidasturlar/>}/>
+
         <Route path='/kafedra/tarix' element={<Tarix/>}/>
+        <Route path='/kafedra/malumotnomalar' element={<Malumotnomalar/>}/>
         
       </Routes>
       <Footer/>

@@ -2,6 +2,10 @@ const translationUz ={
   navTel: "Ishonch telefoni",
   email: "Elektron pochta",
   home:"Bosh sahifa",
+
+  logo1: "Tibbiyot xodimlarining kasbiy",
+  logo2: "malakasini rivojlantirish markazi",
+  logo3: "1 - ultratovush diagnostikasi kafedrasi",
   
   kafedra: "Kafedra",
   kafedra1: "Tarix",

@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/logo.png'
+import img from '../images/logo.jpg'
 import phone from '../images/icons/icons8-phone-96.png'
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
@@ -51,7 +51,14 @@ const Navbar = ({changeLang}) => {
       <div className="container">
         <div className="nav-body">
           <NavLink to='/'>
-            <img className='nav-logo' src={img} alt="logo" />
+            <div className="d-flex">
+              <img className='nav-logo' src={img} alt="logo" />
+              <h3>
+                {t("logo1")} <br />
+                {t("logo2")} <br />
+                {t("logo3")}
+              </h3>
+            </div>
           </NavLink>
 
           <div>
@@ -81,7 +88,7 @@ const Navbar = ({changeLang}) => {
                 <NavLink className="drop-link" to="/kafedra/tarix">{t('kafedra1')}</NavLink>
                 <NavLink className="drop-link" to="/markaz">{t('kafedra2')}</NavLink>
                 <NavLink className="drop-link" to="/markaz">{t('kafedra3')}</NavLink>
-                <NavLink className="drop-link" to="/markaz">{t('kafedra4')}</NavLink>
+                <NavLink className="drop-link" to="/kafedra/malumotnomalar">{t('kafedra4')}</NavLink>
                 <NavLink className="drop-link" to="/markaz">{t('kafedra5')}</NavLink>
 
               </div>
@@ -94,8 +101,8 @@ const Navbar = ({changeLang}) => {
                 <NavLink className="drop-link" to="/meyoriyxujjatlar/ssvbuyruqlari">{t("xujjatlar2")}</NavLink>
                 <NavLink className="drop-link" to="/meyoriyxujjatlar/markazbuyruqlari">{t("xujjatlar3")}</NavLink>
                 <NavLink className="drop-link" to="/meyoriyxujjatlar/dasturlar">{t("xujjatlar4")}</NavLink>
-                <NavLink className="drop-link" to="/xujjatlar">{t("xujjatlar5")}</NavLink>
-                <NavLink className="drop-link" to="/xujjatlar">{t("xujjatlar6")}</NavLink>
+                <NavLink className="drop-link" to="/meyoriyxujjatlar/ishchidasturlar">{t("xujjatlar5")}</NavLink>
+                <NavLink className="drop-link" to="/meyoriyxujjatlar/taqvimreja">{t("xujjatlar6")}</NavLink>
                 <NavLink className="drop-link" to="/meyoriyxujjatlar/darsjadvali">{t("xujjatlar7")}</NavLink>
               </div>
             </li>
