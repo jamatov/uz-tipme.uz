@@ -23,7 +23,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms1")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi1.pdf">
@@ -43,7 +43,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms2")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi2.pdf">
@@ -64,7 +64,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms3")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi3.pdf">
@@ -85,7 +85,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms4")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi4.pdf">
@@ -106,7 +106,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms5")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi5.pdf">
@@ -127,7 +127,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms6")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi6.pdf">
@@ -148,7 +148,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms7")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi7.pdf">
@@ -169,7 +169,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms7")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi8.pdf">
@@ -190,7 +190,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms7")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi9.pdf">
@@ -211,7 +211,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms7")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi10.pdf">
@@ -232,7 +232,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms7")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi11.pdf">
@@ -253,7 +253,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms8")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi12.pdf">
@@ -274,7 +274,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms9")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi134.pdf">
@@ -294,7 +294,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms10")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi14.pdf">
@@ -314,7 +314,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms11")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi15 .pdf">
@@ -334,7 +334,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />      
-                  <h4></h4>  
+                  <h4>{t("workingPrograms12")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi16.pdf">
@@ -354,7 +354,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms13")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi17.pdf">
@@ -374,7 +374,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms14")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi18.pdf">
@@ -394,7 +394,7 @@ export default function Ishchidasturlar(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>{t("workingPrograms15")}</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/ishchi19.pdf">

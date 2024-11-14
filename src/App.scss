@@ -284,8 +284,21 @@ a{
       border: none;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       .card-body{
-        img{
-          width: 100%;
+
+        .d-flex{
+          gap: 20px;
+          align-items: center;
+        }
+        .link-img{
+          width: 100px;
+        }
+
+        h4{
+          color: #0C2338;
+          font-weight: bold;
+          margin: 0;
+          padding: 0;
+          text-align: center;
         }
       }
     }

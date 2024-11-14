@@ -2,6 +2,8 @@ import React from 'react'
 import img1 from '../../images/link-soliq.jpg'
 import img2 from '../../images/link-prizident.jpg'
 import img3 from '../../images/link-xizmat.jpg'
+import gerb from '../../images/gerb.png'
+import gov from '../../images/gov.png'
 import { useTranslation } from "react-i18next";
 
 
@@ -18,11 +20,16 @@ export default function SiteLinks(changeLang) {
         <h2 className='tittle'> {t("sitetittle")}</h2>
         <div className="row">
 
+         
+
           <div className="col-md-4">
             <a target='_blank' href="https://gov.uz/ru/ssv">
-              <div className="card">
+              <div data-aos="fade-up" className="card">
                 <div className="card-body">
-                  <img src={img1} alt="site-links" />
+                  <div className="d-flex">
+                    <img className='link-img' src={gerb} alt="gerb" />
+                    <h4>O'zbekiston Respublikasi <br /> Sog'liqni saqlash vazirligi</h4>
+                  </div>
                 </div>
               </div>
             </a>
@@ -30,9 +37,12 @@ export default function SiteLinks(changeLang) {
 
           <div className="col-md-4">
             <a target='_blank' href="https://president.uz/oz">
-              <div className="card">
+              <div data-aos="fade-up" className="card">
                 <div className="card-body">
-                  <img src={img2} alt="site-links" />
+                  <div className="d-flex">
+                    <img className='link-img' src={gerb} alt="gerb" />
+                    <h4>O'zbekiston Respublikasi <br /> Prezidenti veb-sayti</h4>
+                  </div>
                 </div>
               </div>
             </a>
@@ -40,13 +50,18 @@ export default function SiteLinks(changeLang) {
 
           <div className="col-md-4">
             <a target='_blank' href="https://my.gov.uz/oz">
-              <div className="card">
+              <div data-aos="fade-up" className="card">
                 <div className="card-body">
-                  <img src={img3} alt="site-links" />
+                  <div className="d-flex">
+                    <img className='link-img' src={gov} alt="gov" />
+                    <h4>O'zbekiston Respublikasi <br /> Prezidenti veb-sayti</h4>
+                  </div>
                 </div>
               </div>
             </a>
           </div>
+
+          
 
         </div>
       </div>

@@ -154,6 +154,23 @@ contact7: "Lunch:",
 
   
 
+workingPrograms1: "Principles of managing ultrasound diagnostic equipment",
+workingPrograms2: "Innovative technologies in ultrasound mammography",
+workingPrograms3: "Modern technologies of ultrasound diagnostics in phlebology",
+workingPrograms4: "Clinical comprehensive ultrasound diagnostics of the vascular system",
+workingPrograms5: "Prenatal ultrasound diagnostics of congenital anomalies",
+workingPrograms6: "Selected methods of ultrasound diagnostics in urology practice",
+workingPrograms7: "Clinical ultrasound diagnostics",
+workingPrograms8: "Ultrasound diagnostics of uterine fibroids",
+workingPrograms9: "O-RADS classification for diagnosing ovarian masses",
+workingPrograms10: "BI-RADS ultrasound in mammography",
+workingPrograms11: "FAST, BLUE, RUSH ultrasound examinations in emergency patients",
+workingPrograms12: "Basics of fetal echocardiography ultrasound",
+workingPrograms13: "Doppler ultrasound technologies in obstetric practice",
+workingPrograms14: "Clinical neurosonography ultrasound",
+workingPrograms15: "Elastography technologies in clinical ultrasound diagnostics",
+
+
 
 }
 

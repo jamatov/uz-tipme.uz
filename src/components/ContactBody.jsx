@@ -22,14 +22,14 @@ export default function ContactBody(changeLang) {
       <div className="container">
         <h2 className='tittle'>{t("contactTittle")}</h2>
         <div className="row">
-          <div className="col-md-6">
+          <div data-aos="fade-right" className="col-md-6">
             <h3>{t("contact1")}</h3>
             <div className='social-info mb-3'>
               <img className='icons' src={icon} alt="location" /><p>{t("contact2")}</p>
             </div>
 
             <div className="row">
-              <div className="col-md-6">
+              <div  className="col-md-6">
                 <div className="card">
                   <h3>{t("contact3")}</h3>
                   <a href="tel:+998712966975">
@@ -68,7 +68,7 @@ export default function ContactBody(changeLang) {
               
             </div>
           </div>
-          <div className="col-md-6 ">
+          <div data-aos="fade-left" className="col-md-6 ">
             <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1932.764956494705!2d69.34543539597519!3d41.296972760046145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b698a8600e3%3A0x6de0dfe5784471d1!2sMedicana.uz!5e0!3m2!1sru!2s!4v1726407320942!5m2!1sru!2s" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>

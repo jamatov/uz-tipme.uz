@@ -152,6 +152,24 @@ const translationUz ={
   contact6: "Vebsayt:",
   contact7: "Tushlik:",
 
+
+  workingPrograms1: "Ultratovush diagnostikasi apparatlarini boshqarish tamoyillari",
+  workingPrograms2: "Ultratovush mammografiyasining innovatsion texnologiyalari",
+  workingPrograms3: "Flebologiyada ultratovush diagnostikasi zamonaviy texnologiyalari",
+  workingPrograms4: "Qon tomir tizimini kompleks ultratovush diagnostikasi klinikasi",
+  workingPrograms5: "Tug‘ma nuqsonlarning prenatal ultratovush diagnostikasi",
+  workingPrograms6: "Urologiya amaliyotida ultratovush diagnostikasining tanlangan usullari",
+  workingPrograms7: "Klinik ultratovush diagnostikasi",
+  workingPrograms8: "Bachadon miomasini ultratovush diagnostikasi",
+  workingPrograms9: "Tuxumdon hosilalarini tashxislashda O RADS tasnifi",
+  workingPrograms10: "Ultratovush mammografiyasida BI RADS UZD",
+  workingPrograms11: "Urgent holatdagi bemorlarda FAST, BLUE, RUSH ultratovush tekshiruvi",
+  workingPrograms12: "Fetal exokardiografiya asoslari UZD",
+  workingPrograms13: "Akusherlik amaliyotida dopplerografiya texnologiyalari UZD",
+  workingPrograms14: "Klinik neyrosonografiya UZD",
+  workingPrograms15: "Klinik ultratovush tashxislashda elastografiya texnologiyalari",
+
+
 }
 
 export default translationUz

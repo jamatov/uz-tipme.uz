@@ -23,7 +23,7 @@ export default function Prezidentfarmonlari(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4> 
+                  <h4>2020.03.07 N 28</h4> 
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari1.pdf">
@@ -43,7 +43,7 @@ export default function Prezidentfarmonlari(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>2018.12.7 N 5590</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari2.pdf">
@@ -63,7 +63,7 @@ export default function Prezidentfarmonlari(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>15.01.2021 N 19</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari3.pdf">
@@ -83,7 +83,7 @@ export default function Prezidentfarmonlari(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>11.09.2023 N 158</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari4.pdf">
@@ -103,7 +103,7 @@ export default function Prezidentfarmonlari(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>05.05.2021 N 6221</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari5.pdf">
@@ -123,7 +123,7 @@ export default function Prezidentfarmonlari(changeLang) {
               <div className="card-body">
                 <div className='d-flex'>
                   <img src={pdf} alt="pdf-icon" />
-                  <h4></h4>  
+                  <h4>О СТРАТЕГИИ «УЗБЕКИСТАН – 2030»</h4>  
                 </div>
                 <div className='d-flex'>
                   <a target='_blank' href="/prezident-farmonlari6.pdf">
