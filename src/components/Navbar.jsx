@@ -11,7 +11,16 @@ import tg from '../images/icons/telegram.svg'
 import insta from '../images/icons/instagram.svg'
 import fc from '../images/icons/facebook.svg'
 
-const Navbar = ({changeLang}) => {
+
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+const Navbar1 = ({changeLang}) => {
   const values = [true];
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
@@ -53,7 +62,7 @@ const Navbar = ({changeLang}) => {
           <NavLink to='/'>
             <div className="d-flex">
               <img className='nav-logo' src={img} alt="logo" />
-              <h3>
+              <h3 className='logo-texts'>
                 {t("logo1")} <br />
                 {t("logo2")} <br />
                 {t("logo3")}
@@ -63,11 +72,11 @@ const Navbar = ({changeLang}) => {
 
           <div>
             <ul className='nav-socials'>
-              <li>
+              <li className='pochta'>
                 <h6>{t('navTel')}</h6>
                 <a href="tel:+998712966975"><img className='phone-icon' src={phone} alt="phone icon" /><span>(+998)</span><h4>71-296-69-75</h4></a>
               </li>
-              <li>
+              <li className='pochta'>
                 <h6>{t('email')}</h6>
                 <a href="#"><span>info@tipme.uz</span></a>
               </li>
@@ -77,6 +86,155 @@ const Navbar = ({changeLang}) => {
           </div>
         </div>
       </div>
+      <Navbar expand="lg" className="nav2 bg-body-tertiary">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            
+            <NavLink className="nav-link" to="/">{t('home')}</NavLink>
+            <NavDropdown title={t("kafedra")} id="basic-nav-dropdown">
+              <div className="dropdown">
+                <li>
+                  <NavLink className="drop-link" to="/kafedra/tarix"><NavDropdown.Item href="#action/3.2">
+                  {t("kafedra1")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/markaz"><NavDropdown.Item href="#action/3.2">{t('kafedra2')}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/markaz"><NavDropdown.Item href="#action/3.2">{t('kafedra3')}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/kafedra/malumotnomalar"><NavDropdown.Item href="#action/3.2">{t('kafedra4')}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/markaz"><NavDropdown.Item href="#action/3.2">{t('kafedra5')}
+                  </NavDropdown.Item></NavLink>
+                </li>
+              </div>
+              
+              
+            </NavDropdown>
+
+            <NavDropdown title={t("xujjatlar")} id="basic-nav-dropdown">
+              <div className="dropdown">
+                <li>
+                  <NavLink className="drop-link" to="/meyoriyxujjatlar/prezidentfarmonlari"><NavDropdown.Item href="#action/3.2">
+                  {t("xujjatlar1")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/meyoriyxujjatlar/ssvbuyruqlari"><NavDropdown.Item href="#action/3.2">{t("xujjatlar2")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/meyoriyxujjatlar/markazbuyruqlari"><NavDropdown.Item href="#action/3.2">{t("xujjatlar3")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/meyoriyxujjatlar/dasturlar"><NavDropdown.Item href="#action/3.2">{t("xujjatlar4")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+                <li>
+
+                  <NavLink className="drop-link" to="/meyoriyxujjatlar/ishchidasturlar"><NavDropdown.Item href="#action/3.2">{t("xujjatlar5")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+
+                <li>
+
+                  <NavLink className="drop-link" to="/meyoriyxujjatlar/taqvimreja"><NavDropdown.Item href="#action/3.2">{t("xujjatlar6")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+
+                <li>
+
+                  <NavLink className="drop-link" to="/meyoriyxujjatlar/darsjadvali"><NavDropdown.Item href="#action/3.2">{t("xujjatlar7")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+              </div>
+              
+              
+            </NavDropdown>
+
+            <NavDropdown title={t("faoliyat")} id="basic-nav-dropdown">
+              <div className="dropdown">
+                <li>
+                  <NavLink className="drop-link" to="/faoliyat"><NavDropdown.Item href="#action/3.2">
+                  {t("faoliyat1")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="drop-link" to="/faoliyat"><NavDropdown.Item href="#action/3.2">
+                  {t("faoliyat2")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="drop-link" to="/faoliyat"><NavDropdown.Item href="#action/3.2">
+                  {t("faoliyat3")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="drop-link" to="/faoliyat"><NavDropdown.Item href="#action/3.2">
+                  {t("faoliyat4")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+              </div>
+            </NavDropdown>
+
+            <NavDropdown title={t("tinglovchilar")} id="basic-nav-dropdown">
+              <div className="dropdown">
+                <li>
+                  <NavLink className="drop-link" to="/tinglovchilar"><NavDropdown.Item href="#action/3.2">
+                  {t("tinglovchilar1")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="drop-link" to="/tinglovchilar"><NavDropdown.Item href="#action/3.2">
+                  {t("tinglovchilar2")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+              </div>
+            </NavDropdown>
+
+            <NavDropdown title={t("news")} id="basic-nav-dropdown">
+              <div className="dropdown">
+                <li>
+                  <NavLink className="drop-link" to="/yangiliklar"><NavDropdown.Item href="#action/3.2">
+                  {t("news1")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+
+                <li>
+                  <NavLink className="drop-link" to="/yangiliklar"><NavDropdown.Item href="#action/3.2">
+                  {t("news2")}
+                  </NavDropdown.Item></NavLink>
+                </li>
+              </div>
+            </NavDropdown>
+
+            <NavLink className="nav-link" to="/aloqa">{t("contact")}</NavLink>
+
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
       <div className="nav-bar">
         <div className="container">
           <ul>
@@ -162,4 +320,4 @@ const Navbar = ({changeLang}) => {
   )
 }
 
-export default Navbar;
+export default Navbar1;

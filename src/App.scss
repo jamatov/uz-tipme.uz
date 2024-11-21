@@ -46,6 +46,24 @@ a{
 
 
 .Navbar{  
+
+  .basic-nav-dropdown{
+    width: auto;
+    .dropdown{
+      display: block;
+
+      a{
+        display: block;
+      }
+    }
+  }
+
+  .nav-link{
+    color: #000;
+  }
+  .nav2{
+    display: none ;
+  }
   .nav-head{
     background: $silver;
     padding: 5px 0;
@@ -422,5 +440,87 @@ a{
 
   b{
     color: $blue;
+  }
+}
+
+@media (max-width: 768px) {
+  .Navbar{
+    .nav2{
+      background: $blue;
+      display: block;
+    }
+
+    .logo-texts{
+      font-size: 16px;
+    }
+
+    .nav-body{
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .d-flex{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+  
+        h3{
+          font-weight: bold;
+          text-transform: uppercase;
+          color: $blue;
+        }
+      }
+  
+      .nav-logo{
+        height: 100px;
+      }
+  
+      .nav-socials{
+        display: flex;
+        gap: 20px;
+  
+        h6{
+          font-size: small !important;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: $blue;
+        }
+  
+        a{
+          color: #000;
+  
+          &:hover{
+            color: $blue;
+          }
+        }
+        .pochta{
+          display: none;
+        }
+        li{
+          text-align: right;
+  
+          .phone-icon{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+          span{
+            font-size: smaller;
+          }
+          h4{
+            display: inline-block;
+            font-size: small;
+          }
+        }
+      }
+    }
+
+    .nav-logo{
+      height: 60px !important;
+    }
+    .nav-bar{
+      display: none;
+    }
   }
 }

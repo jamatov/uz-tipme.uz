@@ -20,7 +20,6 @@ export default function Footer(changeLang) {
       <div className="container">
         <div className="row">
             <div className="col-md-4">
-              <img className='footer-logo mb-4' src={logo} alt="logo" />
 
               <h3 className='mb-3'>{t("footerTittle")}</h3>
               <ul className='socials'>
