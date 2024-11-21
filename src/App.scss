@@ -168,6 +168,7 @@ a{
           background: #fff;
           padding: 0;
           z-index: 9;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
           // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
           .drop-link{
@@ -176,7 +177,8 @@ a{
             background: none;
             transition: 0.3 ease-in;
             color: $blue;
-
+            
+            
             &:hover{  
               transition: 0.3 ease-in;
               background: #D8D8D8;
@@ -223,6 +225,41 @@ a{
   }
 }
 
+.Testvy{
+  padding: 100px 0;
+  text-align: center;
+
+  .loading svg polyline {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .loading svg polyline#back {
+    fill: none;
+    stroke: #ff4d5033;
+  }
+  
+  .loading svg polyline#front {
+    fill: none;
+    stroke: #ff4d4f;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 1.4s linear infinite;
+  }
+  
+  @keyframes dash_682 {
+    72.5% {
+      opacity: 0;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
 .Home{
   .header-home{
     position: relative;
@@ -256,6 +293,9 @@ a{
       }
     }
     .carusel{
+      .carousel-control-next, .carousel-control-prev{
+        display: none;
+      }
       .carusel-item{
         height: 80vh;
 
@@ -521,6 +561,105 @@ a{
     }
     .nav-bar{
       display: none;
+    }
+  }
+
+  .dasturlar{
+    padding: 30px 0;
+  
+   
+    .card{
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border: none;
+      .card-body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        img{
+          width: 30px;
+          height: 30px;
+        }
+  
+        .d-flex{
+          gap: 10px;
+          align-items: center;
+
+          h4{
+            font-size: 14px;
+          }
+  
+          button{
+            padding: 5px 5px;
+            color: $blue;
+            border: $blue;
+            border-radius: 3px;
+            color: $blue;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 2px solid $blue;
+
+            font-size: 14px;
+          }
+          
+       
+        }
+  
+  
+      }
+    }
+  
+  }
+
+  .tittle{
+    font-weight: bold;
+    color: $blue;
+    margin-bottom: 20px;
+  }
+
+  .Home{
+    .header-home{
+      position: relative;
+      // .header-blur{
+      //   position: absolute;
+      //   width: 60%;
+      //   top: 0;bottom: 0;
+      //   z-index: 8;
+      //   height: 80vh;
+      //   background: rgba(0, 0, 0, 0.05);
+      //   backdrop-filter: blur(5px) saturate(150%)  drop-shadow(4px 4px 10px blue) ;
+      // }
+      .header-info{
+        position: absolute;
+        width: 90%;
+        top: 0;bottom: 0;
+        z-index: 8;
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        
+  
+        h1{
+          color: #fff;
+          font-weight: bolder;
+          background: rgba(0, 0, 0, 0.05);
+          padding: 30px;
+          text-transform: uppercase;
+          backdrop-filter: blur(10px) saturate(150%)  drop-shadow(4px 4px 10px blue) ;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+      }
+      .carusel{
+        .carusel-item{
+          height: 80vh;
+  
+          .carusel-img{
+            width: 100%;
+            object-fit: cover;
+            height: 80vh;
+          }
+        }
+      }
     }
   }
 }

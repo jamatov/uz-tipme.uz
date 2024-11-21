@@ -19,6 +19,7 @@ import Tarix from './pages/kafedra/tarix.js';
 import Malumotnomalar from './pages/kafedra/malumotnomalar.js';
 import Taqvimreja from './pages/meyoriyxujjatlar/taqvimreja.js';
 import Ishchidasturlar from './pages/meyoriyxujjatlar/ishchidasturlar.js';
+import Testvy from './components/Testvy.jsx';
 
 import { useLocation } from "react-router-dom";
 
@@ -73,6 +74,11 @@ function App() {
 
         <Route path='/kafedra/tarix' element={<Tarix/>}/>
         <Route path='/kafedra/malumotnomalar' element={<Malumotnomalar/>}/>
+
+        <Route path='/test' element={<Testvy/>}/>
+        
+
+
         
       </Routes>
       <Footer/>

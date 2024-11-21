@@ -169,6 +169,13 @@ const translationUz ={
   workingPrograms14: "Klinik neyrosonografiya UZD",
   workingPrograms15: "Klinik ultratovush tashxislashda elastografiya texnologiyalari",
 
+  siteLink1: "O'zbekiston Respublikasi Sog'liqni saqlash vazirligi",
+  siteLink2: "O'zbekiston Respublikasi Prezidenti veb-sayti",
+  siteLink3: "Yagona interaktiv davlat xizmatlari portali",
+
+  test: "Ma'lumotlar to'liq yuklanmagani sababli sayt test rejimda ishlayapdi",
+
+
 
 }
 
