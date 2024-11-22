@@ -56,7 +56,7 @@ export default function ContactBody(changeLang) {
 
                   <h3>{t("contact6")}</h3>
                   <div className="social-info mb-3">
-                    <img src={website } className='icons' alt="phone" /><p>https://uzd-tipme.uz</p>
+                    <img src={website } className='icons' alt="phone" /><p>https://utd-tipme.uz</p>
                   </div>
 
                   <h3>{t("contact7")}</h3>
